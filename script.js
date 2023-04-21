@@ -3,6 +3,7 @@ const btn2 = document.querySelector("button.getItem");
 const btn3 = document.querySelector("button.putItem");
 const text = document.querySelector("h1");
 
+text.textContent = parseInt(window.location.pathname.slice(1));
 let val;
 
 btn1.addEventListener("click", () => {
@@ -25,5 +26,4 @@ btn2.addEventListener("click", () => {
 window.addEventListener('popstate', () => {
     val = parseInt(window.location.pathname.slice(1));
     console.log(parseInt(window.location.pathname.slice(1)))
-    // console.log(window.location.pathname);
 }, false);
