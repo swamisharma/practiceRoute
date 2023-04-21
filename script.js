@@ -12,7 +12,7 @@ btn1.addEventListener("click", () => {
     history.pushState({
         id: 'homepage',
         val: val
-    }, 'Home | My App', `/${val}`);
+    }, 'Home | My App', `/${val}/swami/smart`);
 });
 
 btn2.addEventListener("click", () => {
